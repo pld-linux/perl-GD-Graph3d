@@ -4,11 +4,11 @@
 Summary:	GD::Graph3d perl module
 Summary(pl):	Modu³ perla GD::Graph3d
 Name:		perl-GD-Graph3d
-Version:	0.56
-Release:	2
+Version:	0.59
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-GD >= 1.18
 BuildRequires:	perl-GD-Graph >= 1.30
@@ -28,7 +28,7 @@ autorstwa Martiena Verbruggena, który generuje wykresy przy u¿yciu
 modu³u GD.pm autorstwa Lincolna Steina.
 
 %prep
-%setup -q -n %{pdir}%{pnam}-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
