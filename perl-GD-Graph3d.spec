@@ -5,7 +5,7 @@ Summary:	GD::Graph3d perl module
 Summary(pl):	Modu³ perla GD::Graph3d
 Name:		perl-GD-Graph3d
 Version:	0.63
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -13,7 +13,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-GD >= 1.18
 BuildRequires:	perl-GD-Graph >= 1.30
 BuildRequires:	perl-GD-TextUtil
-BuildRequires:	rpm-perlprov >= 3.0.3-18
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,7 +31,8 @@ modu³u GD.pm autorstwa Lincolna Steina.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -45,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes
-%{perl_sitelib}/GD/Graph3d.pm
-%{perl_sitelib}/GD/Graph/*
+%{perl_vendorlib}/GD/Graph3d.pm
+%{perl_vendorlib}/GD/Graph/*
 %{_mandir}/man3/*
