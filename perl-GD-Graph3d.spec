@@ -6,7 +6,8 @@ Summary(pl):	Modu³ perla GD::Graph3d
 Name:		perl-GD-Graph3d
 Version:	0.63
 Release:	2
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f866dcdd1e7e2056bb946ab7ac3fe37b
