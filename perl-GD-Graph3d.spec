@@ -33,7 +33,7 @@ modu³u GD.pm autorstwa Lincolna Steina.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
