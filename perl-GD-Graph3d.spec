@@ -28,6 +28,11 @@ This is the GD::Graph3d extensions module. It provides 3D graphs
 for the GD::Graph module by Martien Verbruggen, which in turn
 generates graph using Lincoln Stein's GD.pm.
 
+%description -l pl
+To jest modu³ GD::Graph3d. Dodaje wykresy 3D do modu³u GD::Graph
+autorstwa Martiena Verbruggena, który generuje wykresy przy u¿yciu
+modu³o GD.pm autorstwa Lincolna Steina.
+
 %prep
 %setup -q -n GDGraph3d-%{version}
 
