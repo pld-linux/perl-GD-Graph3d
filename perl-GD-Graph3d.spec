@@ -3,7 +3,7 @@ Summary:	GD-Graph3d perl module
 Summary(pl):	Modu³ perla GD-Graph3d
 Name:		perl-GD-Graph3d
 Version:	0.56
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/GD/GDGraph3d-%{version}.tar.gz
