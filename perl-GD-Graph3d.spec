@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	GD-Graph3d perl module
-Summary(pl):	Modu³ perla GD-Graph3d
+Summary:	GD::Graph3d perl module
+Summary(pl):	Modu³ perla GD::Graph3d
 Name:		perl-GD-Graph3d
 Version:	0.56
 Release:	2
