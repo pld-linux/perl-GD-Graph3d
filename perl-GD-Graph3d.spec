@@ -13,7 +13,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-GD >= 1.18
 BuildRequires:	perl-GD-Graph >= 1.30
 BuildRequires:	perl-GD-TextUtil
-BuildRequires:	rpm-perlprov >= 3.0.3-18
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
