@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	GD
-%define	pnam	Graph3d
+%define		pdir	GD
+%define		pnam	Graph3d
 Summary:	GD::Graph3d - create 3D graphs with GD and GD::Graph
 Summary(pl):	GD::Graph3d - tworzenie grafów trójwymiarowych z pomoc± GD i GD::Graph
 Name:		perl-GD-Graph3d
