@@ -1,4 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
+%define	pdir	GD
+%define	pnam	Graph3d
 Summary:	GD::Graph3d perl module
 Summary(pl):	Modu³ perla GD::Graph3d
 Name:		perl-GD-Graph3d
@@ -6,12 +8,12 @@ Version:	0.56
 Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/GD/GDGraph3d-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-18
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	perl-GD
-BuildRequires:	perl-GD-Graph
+BuildRequires:	perl-GD >= 1.18
+BuildRequires:	perl-GD-Graph >= 1.30
 BuildRequires:	perl-GD-TextUtil
+BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,10 +25,10 @@ generates graph using Lincoln Stein's GD.pm.
 %description -l pl
 To jest modu³ GD::Graph3d. Dodaje wykresy 3D do modu³u GD::Graph
 autorstwa Martiena Verbruggena, który generuje wykresy przy u¿yciu
-modu³o GD.pm autorstwa Lincolna Steina.
+modu³u GD.pm autorstwa Lincolna Steina.
 
 %prep
-%setup -q -n GDGraph3d-%{version}
+%setup -q -n %{pdir}%{pnam}-%{version}
 
 %build
 perl Makefile.PL
@@ -37,14 +39,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes README 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz test.pl
+%doc Changes README test.pl
 %{perl_sitelib}/GD/Graph3d.pm
 %{perl_sitelib}/GD/Graph/*
 %{_mandir}/man3/*
