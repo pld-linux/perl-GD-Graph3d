@@ -8,7 +8,7 @@ Summary:	GD::Graph3d - create 3D graphs with GD and GD::Graph
 Summary(pl.UTF-8):	GD::Graph3d - tworzenie grafów trójwymiarowych z pomocą GD i GD::Graph
 Name:		perl-GD-Graph3d
 Version:	0.63
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
